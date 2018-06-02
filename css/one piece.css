@@ -1,0 +1,92 @@
+/*body的样式，浏览器x轴超出部分隐藏，设置背景图片*/
+#body{
+    overflow-x: hidden;
+    background-image: url("../images/lufei.png");
+}
+h2{
+    color: white;
+}
+/*设置海贼王介绍的背景和样式*/
+.container #text{
+    border-radius: 30px;
+    padding: 15px;
+    background-color: #768886;
+    opacity: 0.8;
+}
+.container #text p{
+    font-size: large;
+    color: white;
+    text-indent: 2em;
+    line-height: 30px;
+}
+#text button{
+    height: 40px;
+    font-size: large;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+}
+/*定义和设置布鲁克（音频）左右摇晃的动画*/
+#imgAtu{
+    animation-name: myAnimate;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+
+    -webkit-animation-name: myAnimate;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-direction: alternate;
+
+    -moz-animation-name: myAnimate;
+    -moz-animation-delay: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 1s;
+    -moz-animation-direction: alternate;
+
+    -o-animation-name: myAnimate;
+    -o-animation-delay: 1s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-duration: 1s;
+    -o-animation-direction: alternate;
+}
+@keyframes myAnimate {
+    from {transform: rotate(10deg)}
+    to {transform: rotate(-10deg)}
+}
+@-webkit-keyframes myAnimate {
+    from {-webkit-transform: rotate(10deg)}
+    to {-webkit-transform: rotate(-10deg)}
+}
+@-moz-keyframes myAnimate {
+    from {-moz-transform: rotate(10deg)}
+    to {-moz-transform: rotate(-10deg)}
+}
+@-o-keyframes myAnimate {
+    from {-o-transform: rotate(10deg)}
+    to {-o-transform: rotate(-10deg)}
+}
+/*一个空布局的高*/
+#btw{
+    width: 100%;
+    height: 250px;
+}
+/*视频题目的样式*/
+#vdoStyle{
+     height: 40px;
+ }
+#vdoStyle p{
+     text-indent: 20px;
+    font-size: x-large;
+    line-height: 40px;
+    color: white;
+    background-color: #768886;
+    opacity: 0.8;
+}
+/*定义了视频的宽*/
+#video1{
+    width: 1180px;
+}

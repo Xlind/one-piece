@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, init-scale=1.0">
+    <title>One Piece</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/one%20piece.css">
+</head>
+<body id="body">
+<!--主页内容部分-->
+<div class="container">
+    <div class="row">
+        <!--海贼王介绍部分-->
+        <div class="col-lg-5 col-md-6">
+            <div class="row"><br><br><br></div>
+            <div class="row" id="text">
+                <h2>《海贼王》</h2>
+                <p>拥有财富、名声、权力，
+                    这世界上的一切的男人 “海贼王”哥尔·D·罗杰，
+                    在被行刑受死之前说了一句话，
+                    让全世界的人都涌向了大海。
+                    “想要我的宝藏吗？
+                    如果想要的话，那就到海上去找吧，我全部都放在那里。”，
+                    世界开始迎接“大海贼时代”的来临...</p>
+                <p>时值“大海贼时代”，
+                    为了寻找传说中海贼王罗杰所留下的大秘宝“ONE PIECE”，
+                    无数海贼扬起旗帜，互相争斗。
+                    有一个梦想成为海盗的少年叫路飞，
+                    他因误食“恶魔果实”而成为了橡皮人，
+                    在获得超人能力的同时付出了一辈子无法游泳的代价。
+                    十年后，路飞为实现与因救他而断臂的香克斯的约定而出海，
+                    他在旅途中不断寻找志同道合的伙伴，
+                    开始了以成为海贼王为目标的伟大的冒险旅程...</p>
+                <br>
+                <!--做一个跳转按钮，使页面直接跳转到指定的内容-->
+                <button onclick="goToVideo()">观看海贼王2018燃魂士电影级预告片《剑士的尊严》</button><br><br>
+            </div>
+        </div>
+        <!--一个空布局-->
+        <div class="col-lg-5 col-md-4"></div>
+        <!--布鲁克左右摇晃动画和音频部分-->
+        <div class="col-lg-2 col-md-2"><br>
+            <!--添加一个音频-->
+            <audio id="muc" src="video/binKesi.mp3"></audio>
+            <img src="images/tishi.png">
+            <!--当鼠标按下时触发playMusic（）方法，控制音乐的播放和暂停-->
+            <img id="imgAtu" src="images/buluke.png" onclick="playMusic()">
+        </div>
+    </div>
+    <!--一个空布局-->
+    <div class="row" id="btw"></div>
+    <!--视频部分-->
+    <div class="row" id="vdoStyle">
+        <p>剑士的尊严</p>
+    </div>
+    <div class="row">
+        <!--poster插入视频的封面，controls向用户显示默认浏览器播放器控件，视频格式为ogg-->
+        <video id="video1" poster="images/hzw.png" controls="controls">
+            <source src="video/hzw.Ogg" type="video/ogg"/>
+        </video>
+    </div>
+</div>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/one%20piece.js"></script>
+</body>
+</html>
