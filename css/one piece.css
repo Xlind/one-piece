@@ -88,5 +88,6 @@ h2{
 }
 /*定义了视频的宽*/
 #video1{
-    width: 1180px;
+    width: 100%;
+    /*width: 1180px;*/
 }
